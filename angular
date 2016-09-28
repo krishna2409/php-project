@@ -1,0 +1,16 @@
+<input name = "firstname" type = "text" ng-model = "firstName" required>
+<input name = "lastname" type = "text" ng-model = "lastName" required>
+<input name = "email" type = "email" ng-model = "email" required>
+<button ng-click = "reset()">Reset</button>
+
+<script>
+   function studentController($scope) { 
+      $scope.reset = function(){
+         $scope.firstName = "Mahesh";
+         $scope.lastName = "Parashar";
+         $scope.email = "MaheshParashar@tutorialspoint.com";
+      }   
+      
+      $scope.reset();
+   }
+</script>
